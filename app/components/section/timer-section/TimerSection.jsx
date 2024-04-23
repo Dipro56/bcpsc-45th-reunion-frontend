@@ -1,12 +1,16 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const TimerSection = () => {
   return (
     <div className="bg-white  p-5 rounded-lg shadow-2xl w-6/12 flex flex-col justify-center items-center">
-      <Image height={150} width={150} src={"/image/reunion_logo.jpeg"} alt="logo" className="my-8" />
-
-      <h1 className="text-xl my-1 font-semibold">Regestration going on!</h1>
+      <Image
+        height={250}
+        width={250}
+        src={'/image/reunionlogo.png'}
+        alt="logo"
+        className="my-8"
+      />
       <div className="flex justify-center my-5">
         <div className="flex justify-center items-center flex-col mx-4">
           <h1 className="text-5xl font-bold font-3xl text-blue-900">42</h1>

@@ -2,10 +2,10 @@ import React from "react";
 
 const WelcomeSection = () => {
   return (
-    <div className="flex flex-col text-xl font-semibold lg:w-6/12">
+    <div className="flex flex-col text-md font-semibold lg:w-9/12 shadow-xl p-7 rounded-lg bg-green-200">
       <h1>Dear BCPSC Alumni,</h1>
       <br />
-      <q>
+      <q className="text-sm">
         Join us for a heartwarming journey down memory lane! It's time to
         reconnect with cherished friends and relive the unforgettable moments of
         our school days. Come, be a part of our 45th Year School Reunion—an
@@ -19,8 +19,8 @@ const WelcomeSection = () => {
         your company!
       </q>
       <br />
-      <h1>Warm regards, </h1>
-      <h1>BCPSC Family</h1>
+      <h1 className="text-md">Warm regards, </h1>
+      <h1 className="text-md">BCPSC Family</h1>
     </div>
   );
 };
