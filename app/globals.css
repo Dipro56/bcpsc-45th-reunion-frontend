@@ -17,7 +17,6 @@
 } */
 
 body {
-
   color: rgb(var(--foreground-rgb));
   /* background: linear-gradient(
       to bottom,
@@ -49,12 +48,49 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (last parameter) to change the darkness */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value (last parameter) to change the darkness */
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@media screen and (max-width: 670px) {
+  .smaller-screen-padding {
+    padding-inline: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .smaller-screen-padding {
+    padding-inline: 30px;
+  }
+}
+
+.course-learning-icon-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .rounded-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: rgb(241, 241, 208);
+  }
+
+  .rounded-course-icon-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+  }
 }
